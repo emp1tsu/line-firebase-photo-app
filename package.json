@@ -6,11 +6,16 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy:hosting": "npm run build & firebase deploy --only hosting",
+    "deploy:database": "firebase deploy --only database"
   },
   "dependencies": {
+    "@vueuse/firebase@vue3": "^4.0.0-beta.16",
     "core-js": "^3.6.5",
+    "firebase": "^7.21.1",
     "vue": "^3.0.0-0",
+    "vue-picture-swipe": "^2.0.0",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
   },
